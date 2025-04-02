@@ -179,8 +179,14 @@ header a:hover{
 .carta{
     margin: 2%;
     position: relative;
-    padding: 20px;
+    padding-top: 0px;
 }
+.h3{
+    margin-top: 10%;
+    margin-bottom: 20%;
+
+}
+
 .boton{
     position: absolute;
     left: 50%;
@@ -313,12 +319,13 @@ footer .container{
     }
 
     #buffetes .carta{
-        padding: 80px;
+        padding: 30px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
         background-position-y: 0;
         background-color: rgba(50, 50, 50, 1);
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        min-height: 400px;
     }
 
     .carta:first-child{
