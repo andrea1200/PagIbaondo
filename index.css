@@ -152,6 +152,7 @@ header a:hover{
     background-color: #db6402;
     color: white;
     text-align: center;
+    display: flex;
 }
 
 #buffetes .container{
@@ -173,20 +174,19 @@ header a:hover{
     background-size: cover;
     border-radius: 75px;
     margin-bottom: 80px;
+    flex: 1;
 }
-
-.carta:first-child{
-    margin-right: 80px;
-    margin-left: 150px;
-  
-
+.carta{
+    margin: 2%;
+    position: relative;
+    padding: 20px;
 }
-
-.carta:nth-child(2){
-    margin-left: 80px;
-    margin-right: 150px;
+.boton{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
 }
-
 #caracteristicas .container{
     text-align: center;
     padding: 100px 12px;
@@ -296,6 +296,7 @@ footer .container{
     #buffetes .programas{
         display: flex;
         justify-content: center;
+
     }
 
     #buffetes p{
@@ -312,7 +313,7 @@ footer .container{
     }
 
     #buffetes .carta{
-        padding: 50px;
+        padding: 80px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
         background-position-y: 0;
@@ -328,6 +329,7 @@ footer .container{
         )
         ,url("Imagenes/4.jpg");
         
+        
     }
 
     .carta:nth-child(2){
@@ -339,7 +341,19 @@ footer .container{
         )
         ,url("Imagenes/microsistemas.jpg");
         
+        
     }
+    .carta:nth-child(3){
+    
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("Imagenes/microsistemas.jpg");
+        
+    }
+
 
     #caracteristicas{
         
