@@ -184,9 +184,7 @@ nav ul li ul.submenu li a{
     border-radius: 15px;
     margin-left: 2%;
 }
-.programa-info h3, p{
-    padding-right: 20%;
-}
+
 .programa-imagen {
     width: 50%;
     height: auto;
@@ -196,11 +194,63 @@ nav ul li ul.submenu li a{
     margin-left: 50%;
     z-index: 2;
 }
+.programa-info h3, p{
+    padding-right: 20%;
+}
+/*ARREGLAR ESTO YA QUE INFLUYE EN EL TEXTO DE LA DERECHA E IZQUIERDA*/
+.programa-info-izq p{
+    padding-left: 20%;
+}
+.programa-info-izq h3{
+    padding-left: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+.programa-info-izq{
+    text-align: center;
+    left: 40%;
+    padding: 2%;
+    background-color: #c1d5eb8b;
+    position: absolute;
+    border-radius: 15px;
+    margin-right: 2%;
+
+}
+.programa-imagen-izq {
+    width: 50%;
+    height: auto;
+    border-radius: 80px;
+    object-fit: cover;
+    padding: 3%;
+    z-index: 2;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #hero p{
     color: #ffffff;
 }
 .div-sup{
-    background-color:  rgba(128, 128, 128, 0.5);;
+    background-color:  rgba(128, 128, 128, 0.5);
     padding: 2%;
     margin: 2%;
     margin-bottom: 0;
