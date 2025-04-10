@@ -3,30 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Yuca Restaurant</title>
+  <title>Formulario Pre-Matrícula</title>
   <link rel="stylesheet" href="cartas.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <div class="wrapper">
     <form action="">
-      <h1>Login</h1>
+      <h1>Formulario de Pre-Matrícula</h1>
       <div class="input-box">
-        <input type="text" placeholder="Username" required>
+        <input type="text" placeholder="Nombre completo" required>
         <i class='bx bxs-user'></i>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Password" required>
-        <i class='bx bxs-lock-alt' ></i>
+        <input type="email" placeholder="Correo electrónico" required>
+        <i class='bx bxs-envelope'></i>
       </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">Remember Me</label>
-        <a href="#">Forgot Password</a>
+      <div class="input-box">
+        <input type="tel" placeholder="Teléfono" required>
+        <i class='bx bxs-phone'></i>
       </div>
-      <button type="submit" class="btn">Login</button>
-      <div class="register-link">
-        <p>¿No tienes una cuenta? <a href="#">Register</a></p>
+      <div class="input-box">
+        <input type="text" placeholder="Carrera de interés" required>
+        <i class='bx bxs-graduation'></i>
       </div>
+      <div class="input-box">
+        <input type="date" placeholder="Fecha de nacimiento" required>
+      </div>
+      <div class="input-box">
+        <textarea placeholder="Comentarios adicionales (opcional)" rows="4" style="resize: none;"></textarea>
+        <i class='bx bxs-comment-detail'></i>
+      </div>
+      <button type="submit" class="btn">Enviar Pre-Matrícula</button>
     </form>
   </div>
 </body>

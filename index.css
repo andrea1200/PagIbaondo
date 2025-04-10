@@ -338,6 +338,7 @@ nav ul li ul.submenu li a{
     font-size: 5vw;
 }
 /* General */
+
 footer {
     background: linear-gradient(to right, #12c2d2, #06417b);
     color: #fff;
@@ -463,6 +464,8 @@ footer {
         flex-direction: column;
     }
 }
+
+
 
 @media (min-width: 850px){
     header{
