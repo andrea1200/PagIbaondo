@@ -123,6 +123,7 @@ header a:hover{
     color:white;
     border-radius: 20px;
 }
+/*ESTILOS SUBMENU, CAMBIAR EL DESBORDAMIENTO*/
 nav ul li ul.submenu{
     display: none;
     position: absolute;
