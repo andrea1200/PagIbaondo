@@ -203,7 +203,6 @@ nav ul li ul.submenu li a{
     height: auto;
     border-radius: 80px;
     object-fit: cover;
-  
     margin-left: 52%;
     z-index: 2;
     box-shadow: 5px 5px 25px rgba(12, 43, 145, 0.3);
@@ -253,6 +252,8 @@ nav ul li ul.submenu li a{
 
 
 
+
+
 #hero p{
     color: #ffffff;
     text-align: justify;
@@ -270,15 +271,16 @@ nav ul li ul.submenu li a{
 
 
 
+
 /* General */
 
 footer {
+    margin-top: 2%;
     background: linear-gradient(to right, #12c2d2, #06417b);
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 50px 20px;
     text-align: center;
-    margin-top: 2%;
 }
 
 .footer-container {

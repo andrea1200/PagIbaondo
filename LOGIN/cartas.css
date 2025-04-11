@@ -107,3 +107,131 @@
   .register-link p a:hover{
 	text-decoration: underline;
   }
+/* General */
+
+footer {
+    background: linear-gradient(to right, #12c2d2, #06417b);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 20px;
+    text-align: center;
+	margin-top: 2%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-about, .footer-links, .footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-links h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f4c542;
+}
+
+.footer-social h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 28px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0 15px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+}
+
+.instagram:hover {
+    color: #e4405f;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    border-top: 2px solid #003366;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+        padding-left: 0;
+    }
+
+    .footer-social .social-icons {
+        flex-direction: column;
+    }
+}
