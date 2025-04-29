@@ -116,31 +116,36 @@ header nav{
     text-align: center;
     padding-bottom: 25px;
 }
-
-header a:hover{
-    padding: 8px 15px;
+nav > ul > li:hover > a {
     background-color: rgb(233, 64, 64);
-    color:white;
+    color: #fff;
     border-radius: 20px;
+    padding: 8px 15px;
 }
-/*ESTILOS SUBMENU, CAMBIAR EL DESBORDAMIENTO*/
+nav ul li ul.submenu li a:hover {
+    background-color: #d25f12;
+    color: #fff;
+    padding: 0.7em;
+}
+
 nav ul li ul.submenu{
     display: none;
+    width: max-content;
     position: absolute;
     top:100%;
     left: 0;
-    background: #ffffff;
-    min-width: 150px;
     z-index: 1000;
     flex-direction: column;
 }
+
 nav ul li:hover >ul.submenu{
     display: block;
 }
 nav ul li ul.submenu li a{
-    padding: 10%;
+    padding: 0.7em;
     color: rgb(255, 255, 255);
-    background-color: #d25f12;
+    background-color: #ff800a;
+    font-size: 0.7em;
 }
 #hero{
     display: flex;
@@ -186,7 +191,6 @@ nav ul li ul.submenu li a{
     align-items: center;    
     padding:2rem;  
     border-radius:5px;
-    border: solid;
     margin-left: 7%;
     color:black;
     box-shadow: 5px 5px 25px rgba(243, 97, 7, 0.747);
