@@ -194,6 +194,7 @@ nav ul li ul.submenu li a{
     border-radius: 10px solid black;
     margin-left: 5%;
     margin-right: 6%;
+    padding-bottom: 1rem;
   }
 .programa-info{
     text-align: center;
