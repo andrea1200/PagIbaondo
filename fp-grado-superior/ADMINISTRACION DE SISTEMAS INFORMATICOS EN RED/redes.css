@@ -247,6 +247,7 @@ nav ul li ul.submenu li a{
     width: 75%;
     margin-left: 12rem;
     padding-right: 3rem;
+    border-radius: 30px;
 }
 #buffetes .container h2{
     -webkit-text-fill-color: transparent;
