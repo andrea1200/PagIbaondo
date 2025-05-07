@@ -3,8 +3,8 @@
 <head>
     <title>Ibaiondo!</title>
     <link rel="stylesheet" href="cartas.css">
-    <link rel="stylesheet" href="/footer/footer.css">
-    <link rel="icon" href="/Imagenes/logo (1).png" type="image/png">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="icon" href="../Imagenes/logo (1).png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -13,15 +13,15 @@
         <div class="container">
             <header>
                 <div class="imagen">
-                    <img src="/Imagenes/logo (1).png" alt="logo">
+                    <img src="../Imagenes/logo (1).png" alt="logo">
                 </div>
                 <a href="#" class="head"></a>
                 <nav>
                     <ul>
                         <li>
-                            <a href="/index.html">INICIO</a>
+                            <a href="../index.html">INICIO</a>
                             <ul class="submenu">
-                                <li><a href="/index.html/#HAMBRE">BIENVENIDA</a></li>
+                                <li><a href="../index.html/#HAMBRE">BIENVENIDA</a></li>
                                 <li><a href="#">NOTICIAS</a></li>
                                 <li><a href="#">NOSOTROS</a></li>
                             </ul>
@@ -29,9 +29,9 @@
                         <li>
                             <a href="#buffetes">OFERTA FORMATIVA</a>
                             <ul class="submenu">
-                                <li><a href="/fp-grado-superior/fpGradosuoerior.html">FP GRADO SUPERIOR</a></li>
-                                <li><a href="/fp-grado-medio/fpGradomedio.html">FP GRADO MEDIO</a></li>
-                                <li><a href="/lanbide/lanbide.html">CURSOS LANBIDE</a></li>
+                                <li><a href="../fp-grado-superior/fpGradosuoerior.html">FP GRADO SUPERIOR</a></li>
+                                <li><a href="../fp-grado-medio/fpGradomedio.html">FP GRADO MEDIO</a></li>
+                                <li><a href="../lanbide/lanbide.html">CURSOS LANBIDE</a></li>
                             </ul> 
                         </li>
                         <li>
@@ -50,7 +50,7 @@
                                 <li><a href="#">BOLSA DE TRABAJO</a></li>
                             </ul>
                         </li>
-                        <li><a href="/LOGIN/Login.html">MATRICULATE</a></li>
+                        <li><a href="Login.html">MATRICULATE</a></li>
                     </ul>
                 </nav>
             </header>
@@ -96,7 +96,7 @@
     </section>
     <div id="footer"></div>
     <script>
-        fetch("/footer/footer.html")
+        fetch("footer/footer.html")
           .then(response => response.text())
           .then(data => {
             document.getElementById("footer").innerHTML = data;
