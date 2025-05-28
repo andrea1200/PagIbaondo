@@ -62,7 +62,6 @@ button:hover{
     color:rgb(255, 255, 255);
    
 }
-
 header{
     position: fixed;
 	top: 0;
@@ -70,9 +69,10 @@ header{
 	display: flex;
 	justify-content: space-between;
 	transition: 0.7s;
-	padding: 30px 20px;
+    padding: 25px 20px;
     z-index: 1000;
-         
+    padding: 15px 20px;
+    height: 50px;        
 }
 .imagen{
     margin-top: -1.4%;  
@@ -88,7 +88,6 @@ header .logo{
     letter-spacing: 22px;
     transition: 1.5s;
     text-decoration: none;
-
 }
 header ul{
     list-style: none;
@@ -147,6 +146,7 @@ nav ul li ul.submenu{
 
 nav ul li:hover >ul.submenu{
     display: block;
+    top:100%;
 }
 nav ul li ul.submenu li a{
     padding: 0.7em;

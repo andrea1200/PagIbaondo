@@ -255,16 +255,6 @@ nav ul li ul.submenu li a{
     box-shadow: 5px 5px 25px rgba(12, 43, 145, 0.3);
     margin-left: 4%;
 }
-
-
-
-
-
-
-
-
-
-
 #hero p{
     color: #ffffff;
     text-align: justify;
@@ -298,15 +288,6 @@ nav ul li ul.submenu li a{
 
     #hero h1{
         font-size: 5em;
-    }
-
- 
-
-
-
-
-    footer .container{
-        justify-content: flex-end;
     }
 }
 /* Versión responsive para móviles */

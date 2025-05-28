@@ -49,11 +49,9 @@ button:hover{
     background: #db6402;
     color:white;
     border-radius: 35px;
-   
 }
 .container{
-    max-width: 1400px;
-    margin: auto;
+    width: 100%;
 }
 
 header{
@@ -64,15 +62,15 @@ header{
 	justify-content: space-between;
 	transition: 0.7s;
 	padding: 30px 20px;
-    z-index: 1000;
-         
+    z-index: 1000;  
+    height: 11%;
 }
 .imagen{
     margin-top: -1.4%;  
 }
 header.abajo{
     background: #db6402;
-    padding: 39px 44px;
+   
 }
 header .logo{
     position: relative;
@@ -85,12 +83,11 @@ header .logo{
 }
 header ul{
     list-style: none;
-    padding: 0;
     margin: 0;
     display: flex;
 }
 nav ul li{
-    position: relative;
+    position:relative;
 }
 
 header ul li a{
@@ -102,12 +99,8 @@ header ul li a{
     padding: 5px 20px;
     text-decoration: none;
 }
-
 header .container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 header nav{
@@ -121,6 +114,7 @@ nav > ul > li:hover > a {
     color: #fff;
     border-radius: 20px;
     padding: 8px 15px;
+
 }
 nav ul li ul.submenu li a:hover {
     background-color: #d25f12;
@@ -296,12 +290,6 @@ nav ul li ul.submenu li a{
     #hero h1{
         font-size: 5em;
     }
-
- 
-
-
-
-
     footer .container{
         justify-content: flex-end;
     }
@@ -343,7 +331,7 @@ nav ul li ul.submenu li a{
     }
   }
   
-  @media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .fp-programa {
       flex-direction: column;
       align-items: center;

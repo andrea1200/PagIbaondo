@@ -1,29 +1,18 @@
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
-
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
 })
 cerrar.addEventListener("click",  () => {
     nav.classList.remove("visible");
 })
-let currentIndex = 0;
+document.addEventListener("click", (event) => {
+   const esClickDentroDelMenu = nav.contains(event.target);
+   const esClickEnAbrir = abrir.contains(event.target);
+ 
+   if (nav.classList.contains("visible") && !esClickDentroDelMenu && !esClickEnAbrir) {
+     nav.classList.remove("visible");
+   }
+ });
 
-document.querySelector('.prev-button').addEventListener('click', () => {
-   navigate(-1);
-});
-
-document.querySelector('.next-button').addEventListener('click', () => {
-   navigate(1);
-});
-
-function navigate(direction) {
-   const galleryContainer = document.querySelector('.gallery-container');
-   const totalImages = document.querySelectorAll('.gallery-item').length;
-
-   currentIndex = (currentIndex + direction + totalImages) % totalImages;
-   const offset = -currentIndex * 100;
-
-   galleryContainer.style.transform = `translateX(${offset}%)`;
-}
