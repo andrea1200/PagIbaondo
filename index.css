@@ -479,6 +479,6 @@ h3 {
         color: transparent !important;         
         border: none !important;               
         box-shadow: none !important;           
-        pointer-events: auto !important;       
-    } 
+        pointer-events: auto !important;
+}
 }
