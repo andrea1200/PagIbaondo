@@ -34,8 +34,7 @@ li{
 p{
     text-align: justify;
 }
-.abrir-menu, 
-.cerrar{
+.abrir-menu{
     display: none;
 }
 button{
@@ -372,10 +371,14 @@ nav ul li ul.submenu li a{
 #final h2{
     font-size: clamp(2rem, 6.5vw, 5rem);
 }
+@media (max-width: 1233px){
+h3 {
+    font-size: clamp(1rem, 4vw, 2.5rem);
+}
+}
 
 @media (max-width: 1129px){
-    .abrir-menu,
-    .cerrar{
+    .abrir-menu{
         display: block;
         border: 0;
         font-size: 1.5rem;
@@ -425,7 +428,7 @@ nav ul li ul.submenu li a{
         padding-top: 0;
     }
     }
-@media (max-width: 1090px){
+@media (max-width: 1105px){
     .containerdos{
         flex-wrap: wrap;
     }
@@ -476,8 +479,6 @@ nav ul li ul.submenu li a{
         color: transparent !important;         
         border: none !important;               
         box-shadow: none !important;           
-        pointer-events: auto !important;       
-    } 
+        pointer-events: auto !important;       
+    } 
 }
-
-

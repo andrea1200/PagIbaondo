@@ -1,3 +1,15 @@
+.formulario{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url(CARTA/fotibaiondo.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top:7em;
+	padding-bottom: 2em;
+
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,64 +23,48 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-	
-}
-.formulario{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: url(CARTA/fotibaiondo.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-	padding-top:7em;
-	padding-bottom: 2em;
-
 }
 h1{ 
     font-size: 3.5em;
     text-shadow: #393939 2px 2px;   
 }
 h2{ 
-    font-size: 2.7em;
+    font-size: clamp(2em, 3.5vw, 4rem);
 }
 h3{ 
-    font-size: 2em;
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 p{ 
-    font-size: 1.25em;
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 ul{
     list-style: none;
 }
 li{ 
-    font-size: 1.25em;}
+    font-size: 1.25em;
+}
 p{
     text-align: justify;
 }
-
+.abrir-menu{
+    display: none;
+}
 button{
-    font-size: 1.25em;
+    font-size: clamp(1.35rem, 2.25vw, 1rem);
     font-weight: bold;
-    padding: 10px 40px;
-    border-radius: 35px;
-    border: 5px solid white;
+    padding: 0.7rem 3rem;
+    border-radius: 2rem;
+    border: 0.3rem solid white;
     background-color: transparent;
     color:white;
     transition: all 0.5s ease;
 }
 button:hover{
-    padding: 18px 38x;
     background: #db6402;
     color:white;
-    border-radius: 35px;
-   
+    transform: translateY(4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-
 header{
     position: fixed;
 	top: 0;
@@ -76,16 +72,17 @@ header{
 	display: flex;
 	justify-content: space-between;
 	transition: 0.7s;
-	padding: 30px 20px;
-    z-index: 1000;
-         
+	padding: 2% 1%;
+    z-index: 1000;  
+    height: clamp(80px, 10vh, 100px);
+    width: 100%;
 }
 .imagen{
     margin-top: -1.4%;  
 }
 header.abajo{
     background: #db6402;
-    padding: 39px 44px;
+   
 }
 header .logo{
     position: relative;
@@ -98,29 +95,25 @@ header .logo{
 }
 header ul{
     list-style: none;
-    padding: 0;
     margin: 0;
     display: flex;
 }
 nav ul li{
-    position: relative;
+    position:relative;
 }
 
 header ul li a{
     text-decoration: none;
     color: #ffffff;
     letter-spacing: 2px;
-    transition: 0.7s;
+    transition: backgraund-color 0.7s ease, padding 0.7s ease;
     display: block;
     padding: 5px 20px;
-    text-decoration: none;
+    width: 100%; /* o mejor auto si no quieres forzar ancho */
+    box-sizing: border-box;
 }
-
 header .container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 header nav{
@@ -130,10 +123,12 @@ header nav{
     padding-bottom: 25px;
 }
 nav > ul > li:hover > a {
+    width: 13rem;
     background-color: rgb(233, 64, 64);
     color: #fff;
-    border-radius: 20px;
     padding: 8px 15px;
+
+
 }
 nav ul li ul.submenu li a:hover {
     background-color: #d25f12;
@@ -143,7 +138,7 @@ nav ul li ul.submenu li a:hover {
 
 nav ul li ul.submenu{
     display: none;
-    width: max-content;
+    width: 100%;
     position: absolute;
     top:100%;
     left: 0;
@@ -159,8 +154,8 @@ nav ul li ul.submenu li a{
     color: rgb(255, 255, 255);
     background-color: #ff800a;
     font-size: 0.7em;
+    
 }
-
 
   .wrapper{
 	width: 33%;
@@ -291,6 +286,6 @@ nav ul li ul.submenu li a{
     header nav{
         flex-direction: row;
         padding-bottom: 0;
-        padding-right: 20px;
-    }
+        padding-right: 20px;
+    }
 }
